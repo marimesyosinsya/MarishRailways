@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #33f; /* ターコイズブルー */
+    background-color: #55f; /* ターコイズブルー */
     color: white;
     padding: 20px;
     text-align: center;
@@ -19,7 +19,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    background-color: #228B88;
+    background-color: #aaf;
 }
 
 nav ul li {
@@ -47,7 +47,7 @@ section {
 }
 
 footer {
-    background-color: #33f;
+    background-color: #55f;
     color: white;
     text-align: center;
     padding: 10px;
@@ -87,7 +87,7 @@ th, td {
 
 /* ヘッダー */
 th {
-    background-color: #33f;
+    background-color: #55f;
     color: black;
 }
 
