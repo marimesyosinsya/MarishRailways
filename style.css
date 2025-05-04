@@ -67,8 +67,6 @@ footer {
 /* 各テーブルのサイズ調整 */
 .table-container table {
     width: 100%; /* 親要素の幅いっぱい */
-    min-width: 350px; /* 小さくなりすぎないように */
-    max-width: 500px; /* 大きくなりすぎないように */
     border-collapse: collapse;
     background-color: white;
     table-layout: fixed; /* セルの幅を均等にする */
