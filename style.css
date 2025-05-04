@@ -59,7 +59,6 @@ footer {
 /* テーブルを横に3列並べる */
 .table-container {
     display: grid;
-    gap: 30px; /* テーブル間の余白を増やす */
     justify-content: center;
     width: 100%;
     max-width: 1600px; /* 最大幅を広げる */
