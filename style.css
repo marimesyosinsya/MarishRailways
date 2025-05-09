@@ -91,6 +91,10 @@ tr:nth-child(even) td {
     background-color: #f9f9f9;
 }
 
+summary {
+    background-color: #0a0;
+}
+
 /* 画面サイズごとの調整 */
 @media screen and (max-width: 1400px) {
     .table-container {
