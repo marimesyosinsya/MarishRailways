@@ -1,67 +1,83 @@
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #30D5C8;
-  padding: 10px 20px;
+.header {
   position: relative;
+  padding: 20px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-
-/* メニュー項目 */
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-menu li a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
-
-/* ハンバーガーアイコン */
 .hamburger {
-  display: none;
-  flex-direction: column;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: transparent;
   cursor: pointer;
 }
 
-.hamburger span {
-  height: 3px;
-  width: 25px;
-  background: white;
-  margin: 4px 0;
-  transition: 0.4s;
+.hamburger__line {
+  position: absolute;
+  left: 11px;
+  width: 26px;
+  height: 2px;
+  background-color: #333;
+  transition: all .4s;
 }
 
-/* モバイル対応 */
-@media screen and (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
+.hamburger__line:nth-of-type(1) {
+  top: 14px;
+}
+.hamburger__line:nth-of-type(2) {
+  top: 23px;
+}
+.hamburger__line:nth-of-type(3) {
+  top: 32px;
+}
 
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    background-color: #30D5C8;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
+/* メニューオープン時 */
+.hamburger.active .hamburger__line:nth-of-type(1) {
+  transform: translateY(9px) rotate(-45deg);
+}
+.hamburger.active .hamburger__line:nth-of-type(2) {
+  opacity: 0;
+}
+.hamburger.active .hamburger__line:nth-of-type(3) {
+  transform: translateY(-9px) rotate(45deg);
+}
 
-  .nav-menu.active {
-    display: flex;
-  }
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 2px 0 4px rgba(0,0,0,.1);
+  transform: translateX(-100%);
+  transition: transform .4s;
+  z-index: 90;
+}
+
+.nav.active {
+  transform: translateX(0);
+}
+
+.nav__list {
+  margin: 0;
+  padding: 100px 0 0;
+  list-style: none;
+}
+
+.nav__item {
+  padding: 0 20px;
+}
+
+.nav__link {
+  display: block;
+  padding: 15px 0;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
 }
 
 /* 基本的なスタイル設定 */
