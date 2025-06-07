@@ -12,23 +12,22 @@
   <nav class="navbar">
     <img src="MarishRailways_Logo.png">
 
-    <!-- ハンバーガーアイコン -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+<div class="header">
+  <button class="hamburger" aria-label="メニュー" aria-controls="nav-menu" aria-expanded="false">
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+    <span class="hamburger__line"></span>
+  </button>
 
-    <!-- メニュー -->
-    <ul class="nav-menu" id="nav-menu">
-      <li><a href="#operation">運行状況</a></li>
-      <li><a href="#company">会社情報</a></li>
-      <li><a href="#stations">駅一覧</a></li>
-      <li><a href="#news">ニュース</li>
+  <nav id="nav-menu" class="nav" aria-hidden="true">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#operation" class="nav__link">運行情報</a></li>
+      <li class="nav__item"><a href="#company" class="nav__link">会社概要</a></li>
+      <li class="nav__item"><a href="#stations" class="nav__link">駅一覧</a></li>
+      <li class="nav__item"><a href="#news" class="nav__link">ニュース</a></li>
     </ul>
   </nav>
-</header>
-
+</div>
     
     <main>
         <section id="important">
@@ -51,7 +50,7 @@
         
         <section id="operation">
             <h2>運行情報</h2>
-            <h3>現在の運行状況を表示します。</h3>
+            <h3>現在の運行情報を表示します。</h3>
             <table>
                 <tr><th>路線名</th><th>運行状況</th><th>振替輸送</th></tr>
                 <tr><td>ひろさきメトロ&#x26a0;</td><td>広崎第一空港↔MR広崎外園で2分遅延</td>
