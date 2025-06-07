@@ -191,3 +191,7 @@ summary {
         grid-template-columns: repeat(1, minmax(350px, 1fr)); /* 900px以下は1列 */
     }
 }
+
+p {
+  color: black;
+}
