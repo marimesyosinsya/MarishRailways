@@ -60,6 +60,10 @@
   padding: 20px;
 }
 
+.Left {
+  text-align: left;
+}
+
 .hamburger {
   position: fixed;
   top: 20px;
