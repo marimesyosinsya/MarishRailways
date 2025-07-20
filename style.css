@@ -237,20 +237,6 @@ summary {
     margin: 3px;
 }
 
-/*
-@media screen and (max-width: 1400px) {
-    .table-container {
-        grid-template-columns: repeat(2, minmax(350px, 1fr)); /* 1400px以下は2列 */
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .table-container {
-        grid-template-columns: repeat(1, minmax(350px, 1fr)); /* 900px以下は1列 */
-    }
-}
-*/
-
 h1,h2,h3,p,td {
   color: black;
 }
