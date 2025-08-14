@@ -196,21 +196,6 @@ footer {
     width: 100%;
 }
 
-/* テーブルを横に3列並べる */
-.table-container {
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    max-width: 1600px; /* 最大幅を広げる */
-}
-
-/* 各テーブルのサイズ調整 */
-.table-container table {
-    width: 100%; /* 親要素の幅いっぱい */
-    border-collapse: collapse;
-    background-color: white;
-    table-layout: fixed; /* セルの幅を均等にする */
-}
 
 /* セルのデザイン */
 th, td {
